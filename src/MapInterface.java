@@ -1,12 +1,14 @@
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by dmitry.arefyev on 08.11.2016.
  */
 public class MapInterface {
     public static void main(String[] args) {
-        Map<String, Integer> m = new HashMap<String, Integer>();
+        //HashMap -- not sorted
+        //TreeMap - sorted
+        Map<String, Integer> m = new TreeMap<String, Integer>();
 
         //Наполняем таблицу повторяемости из командной строки
         for (String a : args) {
